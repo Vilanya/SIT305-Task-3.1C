@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Using linear layout with vertical orientation and center gravity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExitActivity"
+    android:layout_gravity="center">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/congrats_text"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Congratulations"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="YOUR SCORE:"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="Score"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="185dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#ffb6c1"
+        android:onClick="OnClickRestart"
+        android:text="Take New Quiz"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"></Button>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="185dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#fed8b1"
+        android:onClick="OnClickFinish"
+        android:text="Finish"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"></Button>
+
+
+</LinearLayout>
